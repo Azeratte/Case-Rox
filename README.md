@@ -90,7 +90,7 @@ Resultado apresentado utilizando o Looker Studio
   #### 3.	Escreva uma query ligando as tabelas Person.Person, Sales.Customer e Sales.SalesOrderHeader de forma a obter uma lista de nomes de clientes e uma contagem de pedidos efetuados.
   Script
 
-     ```sql
+   ```sql
 CREATE OR REPLACE TABLE `intense-acrobat-394414.refinadas_rox.Nome` AS (
 
 
@@ -103,7 +103,8 @@ WHERE
 AND customer.CustomerID=Salesorderheader.CustomerID
 GROUP BY FirstName, LastName
 
-) ```
+)
+```
 
 
 Resultado apresentado utilizando o Looker Studio
@@ -113,7 +114,7 @@ Resultado apresentado utilizando o Looker Studio
  #### 4.	Escreva uma query usando as tabelas Sales.SalesOrderHeader, Sales.SalesOrderDetail e Production.Product, de forma a obter a soma total de produtos (OrderQty) por ProductID e OrderDate.
   Script
 
-     ```sql
+   ```sql
 CREATE OR REPLACE TABLE `intense-acrobat-394414.refinadas_rox.SomaProdutos` AS (
 
 
@@ -129,7 +130,8 @@ AND
 GROUP BY  ProductID, OrderDate, Name
 ORDER BY SUM(OrderQty) DESC
 
-) ```
+)
+```
 
 Resultado apresentado utilizando o Looker Studio
 
@@ -138,7 +140,7 @@ Resultado apresentado utilizando o Looker Studio
   #### 5.	Escreva uma query mostrando os campos SalesOrderID, OrderDate e TotalDue da tabela Sales.SalesOrderHeader. Obtenha apenas as linhas onde a ordem tenha sido feita durante o mês de setembro/2011 e o total devido esteja acima de 1.000. Ordene pelo total devido decrescente.
   Script
   
-     ```sql
+   ```sql
 CREATE OR REPLACE TABLE `intense-acrobat-394414.refinadas_rox.Ordenar` AS (
 
 SELECT 
@@ -152,7 +154,8 @@ WHERE
 AND TotalDue>1000
 ORDER BY TotalDue DESC
 
-) ```
+)
+```
 
 
 Resultado apresentado utilizando o Looker Studio
