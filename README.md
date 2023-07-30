@@ -14,7 +14,7 @@ Utilizando como base o diagrama que foi disponibilizado no arquivo, a modelagem 
 
 
   ## Criação da infraestrutura necessária
-Para a criação da infraestrutura, optei pelo GCP, por sem uma plataforma que tenho alguma familiaridade e por ser possível utiliza-lo gratuitamente dentro de um período de tempo.
+Para a criação da infraestrutura, optei pelo GCP, por sem provedor de cloud robusto, com uma excelente interface pro usuário, além disso, o BigQuery tem um alto poder de processamento com baixo custo.
 
   ### Carga dos arquivos
   Para poder acessar os arquivos csv's pelo BigQuery, realizei o upload dos mesmo através do Google Storage
