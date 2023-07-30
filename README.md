@@ -28,7 +28,7 @@ Para a criação da infraestrutura, optei pelo GCP, por sem uma plataforma que t
 
 Com os data set's criados, criei as tabelas brutas utilizandos os arquivos csv que estavam no Storage
 
-![Tabelas Brutas](imagens/Criação de Tabelas.PNG)
+![Tabelas Brutas](imagens/Criação20%de20%Tabelas.PNG)
 
 ## Desenvolvimento de SCRIPT para análise de dados
 Após a criação das tabelas, foram criados os scripts conforme o que o case solicitava
