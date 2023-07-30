@@ -8,30 +8,30 @@
   5.	(opcional) Criar um relatório em qualquer ferramenta de visualização de dados.
 
 ## Modelagem conceitual dos dados
-  Utilizando como base o diagrama que foi disponibilizado no arquivo, a modelagem de dados foi realizada utilizando a ferramente Gen My Model:
+Utilizando como base o diagrama que foi disponibilizado no arquivo, a modelagem de dados foi realizada utilizando a ferramente Gen My Model:
 
-  ![Modelagem de Dados](imagens/Modelo GenMyModel.PNG)
+![Modelagem de Dados](/imagens/Modelo GenMyModel.PNG)
 
 
   ## Criação da infraestrutura necessária
-    Para a criação da infraestrutura, optei pelo GCP, por sem uma plataforma que tenho alguma familiaridade e por ser possível utiliza-lo gratuitamente dentro de um período de tempo.
+Para a criação da infraestrutura, optei pelo GCP, por sem uma plataforma que tenho alguma familiaridade e por ser possível utiliza-lo gratuitamente dentro de um período de tempo.
 
   ### Carga dos arquivos
-    Para poder acessar os arquivos csv's pelo BigQuery, realizei o upload dos mesmo através do Google Storage
+  Para poder acessar os arquivos csv's pelo BigQuery, realizei o upload dos mesmo através do Google Storage
 
-     ![Carga de Arquivos](imagens/Google Storage.PNG)
+![Carga de Arquivos](/imagens/Google Storage.PNG)
 
   ### Criação de tabelas
-    Já com os arquivos no Storage, utilizando o BigQuery criei dois data set's, um para as tabelas brutas e outro para tabelas refinadas
+  Já com os arquivos no Storage, utilizando o BigQuery criei dois data set's, um para as tabelas brutas e outro para tabelas refinadas
 
-     ![Data Set](imagens/dataset.PNG)
+![Data Set](imagens/dataset.PNG)
 
-     Com os data set's criados, criei as tabelas brutas utilizandos os arquivos csv que estavam no Storage
+Com os data set's criados, criei as tabelas brutas utilizandos os arquivos csv que estavam no Storage
 
-      ![Tabelas Brutas](imagens/Criação de Tabelas.PNG)
+![Tabelas Brutas](imagens/Criação de Tabelas.PNG)
 
 ## Desenvolvimento de SCRIPT para análise de dados
-  Após a criação das tabelas, foram criados os scripts conforme o que o case solicitava
+Após a criação das tabelas, foram criados os scripts conforme o que o case solicitava
 
   #### 1.	Escreva uma query que retorna a quantidade de linhas na tabela Sales.SalesOrderDetail pelo campo SalesOrderID, desde que tenham pelo menos três linhas de detalhes
   Script
@@ -54,7 +54,7 @@ HAVING
  ```
 Resultado apresentado utilizando o Looker Studio
 
-      ![Contagem](imagens/Contagem.PNG)
+![Contagem](imagens/Contagem.PNG)
 
   #### 2.	Escreva uma query que ligue as tabelas Sales.SalesOrderDetail, Sales.SpecialOfferProduct e Production.Product e retorne os 3 produtos (Name) mais vendidos (pela soma de OrderQty), agrupados pelo número de dias para manufatura (DaysToManufacture).
   Script
@@ -85,7 +85,7 @@ ORDER BY
 
 Resultado apresentado utilizando o Looker Studio
 
-      ![Mais Vendido](imagens/Mais Vendido.PNG)
+![Mais Vendido](imagens/Mais Vendido.PNG)
 
   #### 3.	Escreva uma query ligando as tabelas Person.Person, Sales.Customer e Sales.SalesOrderHeader de forma a obter uma lista de nomes de clientes e uma contagem de pedidos efetuados.
   Script
@@ -108,7 +108,7 @@ GROUP BY FirstName, LastName
 
 Resultado apresentado utilizando o Looker Studio
 
-      ![Nome](imagens/Nome.PNG)
+![Nome](imagens/Nome.PNG)
 
  #### 4.	Escreva uma query usando as tabelas Sales.SalesOrderHeader, Sales.SalesOrderDetail e Production.Product, de forma a obter a soma total de produtos (OrderQty) por ProductID e OrderDate.
   Script
@@ -157,7 +157,7 @@ ORDER BY TotalDue DESC
 
 Resultado apresentado utilizando o Looker Studio
 
-      ![Ordenar](imagens/Ordenar.PNG)
+![Ordenar](imagens/Ordenar.PNG)
 
 
 ### Criação de tabelas refinadas
