@@ -10,7 +10,7 @@
 ## Modelagem conceitual dos dados
 Utilizando como base o diagrama que foi disponibilizado no arquivo, a modelagem de dados foi realizada utilizando a ferramente Gen My Model:
 
-![Modelagem de Dados](/imagens/Modelo GenMyModel.PNG)
+![Data Set](imagens/Modelo%20GenMyModel.PNG)
 
 
   ## Criação da infraestrutura necessária
@@ -85,7 +85,7 @@ ORDER BY
 
 Resultado apresentado utilizando o Looker Studio
 
-![Mais Vendido](imagens/Mais Vendido.PNG)
+![Mais Vendido](imagens/Mais%20Vendido.PNG)
 
   #### 3.	Escreva uma query ligando as tabelas Person.Person, Sales.Customer e Sales.SalesOrderHeader de forma a obter uma lista de nomes de clientes e uma contagem de pedidos efetuados.
   Script
@@ -133,7 +133,7 @@ ORDER BY SUM(OrderQty) DESC
 ```
 Resultado apresentado utilizando o Looker Studio
 
-      ![Soma Produtos](imagens/Soma Produtos.PNG)
+![Soma Produtos](imagens/Soma%20Produtos.PNG)
 
   #### 5.	Escreva uma query mostrando os campos SalesOrderID, OrderDate e TotalDue da tabela Sales.SalesOrderHeader. Obtenha apenas as linhas onde a ordem tenha sido feita durante o mês de setembro/2011 e o total devido esteja acima de 1.000. Ordene pelo total devido decrescente.
   Script
