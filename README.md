@@ -19,7 +19,7 @@ Para a criação da infraestrutura, optei pelo GCP, por sem uma plataforma que t
   ### Carga dos arquivos
   Para poder acessar os arquivos csv's pelo BigQuery, realizei o upload dos mesmo através do Google Storage
 
-![Carga de Arquivos](/imagens/Google Storage.PNG)
+![Carga de Arquivos](/imagens/Google%20Storage.PNG)
 
   ### Criação de tabelas
   Já com os arquivos no Storage, utilizando o BigQuery criei dois data set's, um para as tabelas brutas e outro para tabelas refinadas
@@ -36,7 +36,7 @@ Após a criação das tabelas, foram criados os scripts conforme o que o case so
   #### 1.	Escreva uma query que retorna a quantidade de linhas na tabela Sales.SalesOrderDetail pelo campo SalesOrderID, desde que tenham pelo menos três linhas de detalhes
   Script
 
-   ```mysql
+   ```sql
 CREATE OR REPLACE TABLE `intense-acrobat-394414.refinadas_rox.Contagem` AS (
 
 WITH CONTAGEM AS (
@@ -90,7 +90,7 @@ Resultado apresentado utilizando o Looker Studio
   #### 3.	Escreva uma query ligando as tabelas Person.Person, Sales.Customer e Sales.SalesOrderHeader de forma a obter uma lista de nomes de clientes e uma contagem de pedidos efetuados.
   Script
 
-     ```mysql
+     ```sql
 CREATE OR REPLACE TABLE `intense-acrobat-394414.refinadas_rox.Nome` AS (
 
 
@@ -104,7 +104,7 @@ AND customer.CustomerID=Salesorderheader.CustomerID
 GROUP BY FirstName, LastName
 
 )
-```
+
 
 Resultado apresentado utilizando o Looker Studio
 
@@ -130,7 +130,7 @@ GROUP BY  ProductID, OrderDate, Name
 ORDER BY SUM(OrderQty) DESC
 
 )
-```
+
 Resultado apresentado utilizando o Looker Studio
 
 ![Soma Produtos](imagens/Soma%20Produtos.PNG)
@@ -153,7 +153,7 @@ AND TotalDue>1000
 ORDER BY TotalDue DESC
 
 )
-```
+
 
 Resultado apresentado utilizando o Looker Studio
 
